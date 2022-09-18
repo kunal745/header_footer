@@ -1,77 +1,77 @@
 import React from "react";
-import {
-Box,
-Container,
-Row,
-Column,
-FooterLink,
-Heading,
-} from "./FooterStyles";
 
-const Footer = () => {
+
+function Footer() {
+	
 return (
-	<Box>
-	<h1 style={{ color: "green",
-				textAlign: "center",
-				marginTop: "-50px" }}>
-		GeeksforGeeks: A Computer Science Portal for Geeks
-	</h1>
-	<Container>
-		<Row>
-		<Column>
-			<Heading>About Us</Heading>
-			<FooterLink href="#">Aim</FooterLink>
-			<FooterLink href="#">Vision</FooterLink>
-			<FooterLink href="#">Testimonials</FooterLink>
-		</Column>
-		<Column>
-			<Heading>Services</Heading>
-			<FooterLink href="#">Writing</FooterLink>
-			<FooterLink href="#">Internships</FooterLink>
-			<FooterLink href="#">Coding</FooterLink>
-			<FooterLink href="#">Teaching</FooterLink>
-		</Column>
-		<Column>
-			<Heading>Contact Us</Heading>
-			<FooterLink href="#">Uttar Pradesh</FooterLink>
-			<FooterLink href="#">Ahemdabad</FooterLink>
-			<FooterLink href="#">Indore</FooterLink>
-			<FooterLink href="#">Mumbai</FooterLink>
-		</Column>
-		<Column>
-			<Heading>Social Media</Heading>
-			<FooterLink href="#">
-			<i className="fab fa-facebook-f">
-				<span style={{ marginLeft: "10px" }}>
-				Facebook
-				</span>
-			</i>
-			</FooterLink>
-			<FooterLink href="#">
-			<i className="fab fa-instagram">
-				<span style={{ marginLeft: "10px" }}>
-				Instagram
-				</span>
-			</i>
-			</FooterLink>
-			<FooterLink href="#">
-			<i className="fab fa-twitter">
-				<span style={{ marginLeft: "10px" }}>
-				Twitter
-				</span>
-			</i>
-			</FooterLink>
-			<FooterLink href="#">
-			<i className="fab fa-youtube">
-				<span style={{ marginLeft: "10px" }}>
-				Youtube
-				</span>
-			</i>
-			</FooterLink>
-		</Column>
-		</Row>
-	</Container>
-	</Box>
+	<div class="div" style={{backgroundColor:"black",paddingTop:"10px",display:"flex",flexWrap:"wrap",lineHeight:"20px",justifyContent:"space-around"}}>
+            <div class="" style={{/*border:"2px solid red",width:"100px"*/}}>
+                <ul style={{color:"white",fontSize:"15px",float:"center",listStyle:"none",display:"inline-block",margin: "0", padding: "10px"}}>
+                    <li><b>ABOUT</b></li>
+					<br></br>
+                    <li><a>Contact Us</a></li>
+                    <li><a>Careers</a></li>
+                    <li><a>Stories</a></li>
+                    <li><a>Press</a></li>
+                    <li><a>Flipkart</a></li>
+                </ul>
+            </div>
+            <div class="" style={{/*border:"2px solid red"*/}}>
+                <ul style={{color:"white",fontSize:"15px",listStyle:"none",margin:"0", padding: "10px"}}>
+                    <li><b>HELP</b></li>
+					<br></br>
+                    <li><a>Payments</a></li>
+                    <li><a>Shipping</a></li>
+                    <li><a>Cancellation and Returns</a></li>
+                    <li><a>FAQ</a></li>
+                    <li><a>Report Infringement</a></li>
+                </ul>
+            </div>
+            <div class="" style={{/*border:"2px solid red"*/}}>
+                <ul style={{color:"white",fontSize:"15px",listStyle:"none",margin: "0", padding: "10px"}}>
+                    <li><b>POLICY</b></li>
+					<br></br>
+                    <li><a>Return Policy</a></li>
+                    <li><a>Terms of Use</a></li>
+                    <li><a>Security</a></li>
+                    <li><a>Privacy</a></li>
+                    <li><a>Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="" style={{/*border:"2px solid red"*/}}>
+                <ul style={{color:"white",fontSize:"15px",listStyle:"none",margin: "0", padding: "10px"}}>
+                    <li><b>SOCIAL</b></li>
+					<br></br>
+                    <li><a>Facebook</a></li>
+                    <li><a>Twitter</a></li>
+                    <li><a>YouTube</a></li>
+                </ul>
+            </div>
+            <div class="" style={{color:"white",width:"200px",height:"200px"/*,border:"2px solid red"*/}}>
+                <ul style={{listStyle:"none",margin: "0", padding: "10px",fontSize:"15px"}}>
+                    <li><b>Mail Us:</b></li>
+					<br></br>
+                    <li>Flipkart Internet Private Limited,
+                        Buildings Alyssa, Begonia &
+                        Clove Embassy Tech Village,
+                        Outer Ring Road, Devarabeesanahalli Village,
+                        Bengaluru, 560103, Karnataka, India
+                    </li>
+                </ul>
+            </div>
+            <div class="" style={{color:"white",width:"200px",height:"200px"/*,border:"2px solid red"*/}}>
+                <ul style={{listStyle:"none",fontSize:"15px",margin: "0", padding: "10px"}}>
+                    <li><b>Mail Us:</b></li>
+					<br></br>
+                    <li>Flipkart Internet Private Limited,
+                        Buildings Alyssa, Begonia &
+                        Clove Embassy Tech Village,
+                        Outer Ring Road, Devarabeesanahalli Village,
+                        Bengaluru, 560103, Karnataka, India
+                    </li>
+                </ul>
+            </div>
+        </div>
 );
 };
 export default Footer;
